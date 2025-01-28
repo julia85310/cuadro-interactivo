@@ -6,7 +6,9 @@ main {
   
 }
 
-div{
+#divPrincipal{
+  position: absolute;
+  z-index: 2;
   width: 200px;
   height: 200px;
   background-color: tomato;
@@ -17,12 +19,12 @@ div{
   animation: latir 3s ease-in-out infinite;
 }
 
-div:hover{
+#divPrincipal:hover{
   background-color: rgba(255, 99, 71, 0.884);
   box-shadow: 2px 2px 20px rgb(207, 172, 166);
 }
 
-div:active {
+#divPrincipal:active {
   transform: rotate(45deg) scale(1.5);
 }
 
@@ -42,4 +44,22 @@ div:active {
     height: 200px;
     background-color: tomato;
   }
+}
+
+#divDebajo {
+  position: absolute;
+  z-index: 1;
+  width: 300px;
+  height: 300px;
+  background-color: aquamarine;
+  border-radius: 20%;
+}
+
+#divEncima {
+  position: absolute;
+  z-index: 3;
+  width: 50px;
+  height: 50px;
+  background-color: #fff67f;
+  border-radius: 40%;
 }
